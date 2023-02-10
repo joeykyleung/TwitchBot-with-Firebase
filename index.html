@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+
+    <style>
+        body{text-align: center;}
+        #game{
+            float:left;
+            height: 475px;
+            width: 50%;
+            background-color: darkslategray;
+            color: floralwhite;
+            padding-top: 25px;
+        }
+        #bot{
+            float:left;
+            height: 500px;
+            width: 50%;
+            background-color: floralwhite;
+            color: darkslategray;
+        }
+        input{
+            width:200px
+        }
+    </style>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="config.js"></script>
+</head>
+<body>
+    <div id="game">
+        <h1>practice game below</h1>
+        <h4>click on button to get points. click clear to reset</h4>
+        <h4 id="score">score: 0</h4>
+        <button id="scoreButton">button</button>
+        <button id="scoreClear">clear</button>
+    </div>
+    <div id="bot">
+        <h1>for twitchbot</h1>
+        <h4>enter metaract to promote:</h4>
+        <input id="metaract" type="text">
+        <h4>enter interval at which twitchbot will send:</h4>
+        <input id="interval" type="number">
+        <br><br>
+        <button id="submit">submit</button>
+        <button id="find">test</button>
+    </div>
+</body>
+</html>
